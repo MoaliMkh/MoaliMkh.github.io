@@ -1,746 +1,1413 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Mohammadali Mohammadkhani</title>
-	<meta name="description" content="Mohammadali Mohammadkhani — MSc student in Computer Science (Data Science & AI) at Saarland University. Research at the intersection of NLP, Machine Learning, and Human-Centered Computing.">
-	<meta name="author" content="Mohammadali Mohammadkhani">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mohammadali Mohammadkhani</title>
+    <meta
+      name="description"
+      content="Mohammadali Mohammadkhani — MSc student in Computer Science (Data Science & AI) at Saarland University. Research at the intersection of NLP, Machine Learning, and Human-Centered Computing."
+    />
+    <meta name="author" content="Mohammadali Mohammadkhani" />
 
-	<!-- Open Graph -->
-	<meta property="og:type" content="website">
-	<meta property="og:title" content="Mohammadali Mohammadkhani">
-	<meta property="og:description" content="MSc student in Computer Science (Data Science & AI) at Saarland University. NLP · Machine Learning · Human-Centered Computing.">
-	<meta property="og:image" content="assets/images/resume-profile.jpg">
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Mohammadali Mohammadkhani" />
+    <meta
+      property="og:description"
+      content="MSc student in Computer Science (Data Science & AI) at Saarland University. NLP · Machine Learning · Human-Centered Computing."
+    />
+    <meta property="og:image" content="assets/images/resume-profile.jpg" />
 
-	<link rel="shortcut icon" href="favicon.ico">
+    <link rel="shortcut icon" href="favicon.ico" />
 
-	<!-- Fonts -->
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
 
-	<style>
-		:root {
-			--bg: #ffffff;
-			--bg-soft: #f3f5f7;
-			--surface: #ffffff;
-			--border: #e4e7eb;
-			--text: #1a1d21;
-			--text-soft: #4d545c;
-			--text-mute: #8b929b;
-			--accent: #2f5d8a;
-			--accent-soft: #ebf1f7;
-			--accent-ring: rgba(47, 93, 138, 0.16);
-			--shadow: 0 1px 2px rgba(20, 26, 33, 0.04), 0 8px 24px rgba(20, 26, 33, 0.06);
-			--shadow-lg: 0 12px 40px rgba(20, 26, 33, 0.11);
-			--radius: 16px;
-			--maxw: 1180px;
-			--sidebar-w: 340px;
-			--serif: "Source Serif 4", Georgia, "Times New Roman", serif;
-			--sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-		}
+    <style>
+      :root {
+        --bg: #ffffff;
+        --bg-soft: #f3f5f7;
+        --surface: #ffffff;
+        --border: #e4e7eb;
+        --text: #1a1d21;
+        --text-soft: #4d545c;
+        --text-mute: #8b929b;
+        --accent: #2f5d8a;
+        --accent-soft: #ebf1f7;
+        --accent-ring: rgba(47, 93, 138, 0.16);
+        --shadow:
+          0 1px 2px rgba(20, 26, 33, 0.04), 0 8px 24px rgba(20, 26, 33, 0.06);
+        --shadow-lg: 0 12px 40px rgba(20, 26, 33, 0.11);
+        --radius: 16px;
+        --maxw: 1180px;
+        --sidebar-w: 340px;
+        --serif: "Source Serif 4", Georgia, "Times New Roman", serif;
+        --sans:
+          "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      }
 
-		[data-theme="dark"] {
-			--bg: #0f1419;
-			--bg-soft: #181f27;
-			--surface: #1a222b;
-			--border: #2a333d;
-			--text: #eaeef2;
-			--text-soft: #b3bbc4;
-			--text-mute: #7c858f;
-			--accent: #6fa3d6;
-			--accent-soft: #182634;
-			--accent-ring: rgba(111, 163, 214, 0.22);
-			--shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 8px 24px rgba(0, 0, 0, 0.35);
-			--shadow-lg: 0 12px 40px rgba(0, 0, 0, 0.5);
-		}
+      [data-theme="dark"] {
+        --bg: #0f1419;
+        --bg-soft: #181f27;
+        --surface: #1a222b;
+        --border: #2a333d;
+        --text: #eaeef2;
+        --text-soft: #b3bbc4;
+        --text-mute: #7c858f;
+        --accent: #6fa3d6;
+        --accent-soft: #182634;
+        --accent-ring: rgba(111, 163, 214, 0.22);
+        --shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 8px 24px rgba(0, 0, 0, 0.35);
+        --shadow-lg: 0 12px 40px rgba(0, 0, 0, 0.5);
+      }
 
-		* { box-sizing: border-box; margin: 0; padding: 0; }
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
 
-		html { scroll-behavior: smooth; scroll-padding-top: 90px; }
+      html {
+        scroll-behavior: smooth;
+        scroll-padding-top: 90px;
+      }
 
-		body {
-			font-family: var(--sans);
-			background: var(--bg);
-			color: var(--text);
-			line-height: 1.65;
-			-webkit-font-smoothing: antialiased;
-			text-rendering: optimizeLegibility;
-			transition: background 0.4s ease, color 0.4s ease;
-		}
+      body {
+        font-family: var(--sans);
+        background: var(--bg);
+        color: var(--text);
+        line-height: 1.65;
+        -webkit-font-smoothing: antialiased;
+        text-rendering: optimizeLegibility;
+        transition:
+          background 0.4s ease,
+          color 0.4s ease;
+      }
 
-		a { color: var(--accent); text-decoration: none; transition: color 0.2s ease, opacity 0.2s ease; }
-		a:hover { opacity: 0.78; }
+      a {
+        color: var(--accent);
+        text-decoration: none;
+        transition:
+          color 0.2s ease,
+          opacity 0.2s ease;
+      }
+      a:hover {
+        opacity: 0.78;
+      }
 
-		::selection { background: var(--accent-ring); }
+      ::selection {
+        background: var(--accent-ring);
+      }
 
-		/* ---------- Layout ---------- */
-		.layout {
-			max-width: var(--maxw);
-			margin: 0 auto;
-			padding: 0 clamp(20px, 5vw, 64px);
-			display: grid;
-			grid-template-columns: var(--sidebar-w) 1fr;
-			gap: clamp(32px, 5vw, 80px);
-			align-items: start;
-		}
+      /* ---------- Layout ---------- */
+      .layout {
+        max-width: var(--maxw);
+        margin: 0 auto;
+        padding: 0 clamp(20px, 5vw, 64px);
+        display: grid;
+        grid-template-columns: var(--sidebar-w) 1fr;
+        gap: clamp(32px, 5vw, 80px);
+        align-items: start;
+      }
 
-		/* ---------- Sidebar ---------- */
-		.sidebar {
-			position: sticky;
-			top: 0;
-			height: 100vh;
-			display: flex;
-			flex-direction: column;
-			justify-content: center;
-			padding: 48px 0;
-			gap: 28px;
-		}
+      /* ---------- Sidebar ---------- */
+      .sidebar {
+        position: sticky;
+        top: 0;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 48px 0;
+        gap: 28px;
+      }
 
-		.avatar-wrap { position: relative; width: fit-content; }
-		.avatar {
-			width: 168px; height: 168px;
-			border-radius: 50%;
-			object-fit: cover;
-			border: 4px solid var(--surface);
-			box-shadow: var(--shadow-lg);
-			background: var(--bg-soft);
-		}
-		.avatar-ring {
-			position: absolute; inset: -8px;
-			border-radius: 50%;
-			border: 1.5px dashed var(--accent-ring);
-			pointer-events: none;
-		}
+      .avatar-wrap {
+        position: relative;
+        width: fit-content;
+      }
+      .avatar {
+        width: 168px;
+        height: 168px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 4px solid var(--surface);
+        box-shadow: var(--shadow-lg);
+        background: var(--bg-soft);
+      }
+      .avatar-ring {
+        position: absolute;
+        inset: -8px;
+        border-radius: 50%;
+        border: 1.5px dashed var(--accent-ring);
+        pointer-events: none;
+      }
 
-		.identity .name {
-			font-family: var(--serif);
-			font-size: 2rem;
-			font-weight: 500;
-			line-height: 1.1;
-			letter-spacing: -0.01em;
-		}
-		.identity .role {
-			margin-top: 10px;
-			color: var(--text-soft);
-			font-size: 0.95rem;
-			line-height: 1.5;
-		}
-		.identity .affil {
-			margin-top: 6px;
-			color: var(--accent);
-			font-size: 0.9rem;
-			font-weight: 500;
-		}
+      .identity .name {
+        font-family: var(--serif);
+        font-size: 2rem;
+        font-weight: 500;
+        line-height: 1.1;
+        letter-spacing: -0.01em;
+      }
+      .identity .role {
+        margin-top: 10px;
+        color: var(--text-soft);
+        font-size: 0.95rem;
+        line-height: 1.5;
+      }
+      .identity .affil {
+        margin-top: 6px;
+        color: var(--accent);
+        font-size: 0.9rem;
+        font-weight: 500;
+      }
 
-		.contact-list { list-style: none; display: flex; flex-direction: column; gap: 11px; }
-		.contact-list li { display: flex; align-items: center; gap: 12px; font-size: 0.88rem; color: var(--text-soft); }
-		.contact-list .ico {
-			width: 32px; height: 32px;
-			display: grid; place-items: center;
-			border-radius: 9px;
-			background: var(--bg-soft);
-			border: 1px solid var(--border);
-			color: var(--accent);
-			flex-shrink: 0;
-		}
-		.contact-list a { color: var(--text-soft); }
-		.contact-list a:hover { color: var(--accent); opacity: 1; }
+      .contact-list {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 11px;
+      }
+      .contact-list li {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        font-size: 0.88rem;
+        color: var(--text-soft);
+      }
+      .contact-list .ico {
+        width: 32px;
+        height: 32px;
+        display: grid;
+        place-items: center;
+        border-radius: 9px;
+        background: var(--bg-soft);
+        border: 1px solid var(--border);
+        color: var(--accent);
+        flex-shrink: 0;
+      }
+      .contact-list a {
+        color: var(--text-soft);
+      }
+      .contact-list a:hover {
+        color: var(--accent);
+        opacity: 1;
+      }
 
-		.socials { display: flex; gap: 10px; }
-		.socials a {
-			width: 40px; height: 40px;
-			display: grid; place-items: center;
-			border-radius: 10px;
-			background: var(--surface);
-			border: 1px solid var(--border);
-			color: var(--text-soft);
-			box-shadow: var(--shadow);
-			transition: transform 0.2s ease, color 0.2s ease, border-color 0.2s ease;
-		}
-		.socials a:hover { transform: translateY(-3px); color: var(--accent); border-color: var(--accent); opacity: 1; }
-		.socials svg { width: 19px; height: 19px; }
+      .socials {
+        display: flex;
+        gap: 10px;
+      }
+      .socials a {
+        width: 40px;
+        height: 40px;
+        display: grid;
+        place-items: center;
+        border-radius: 10px;
+        background: var(--surface);
+        border: 1px solid var(--border);
+        color: var(--text-soft);
+        box-shadow: var(--shadow);
+        transition:
+          transform 0.2s ease,
+          color 0.2s ease,
+          border-color 0.2s ease;
+      }
+      .socials a:hover {
+        transform: translateY(-3px);
+        color: var(--accent);
+        border-color: var(--accent);
+        opacity: 1;
+      }
+      .socials svg {
+        width: 19px;
+        height: 19px;
+      }
 
-		/* ---------- Top bar (nav + theme) ---------- */
-		.topbar {
-			position: sticky; top: 0; z-index: 50;
-			display: flex; align-items: center; justify-content: space-between;
-			gap: 16px;
-			padding: 16px 0;
-			margin-bottom: 8px;
-			background: color-mix(in srgb, var(--bg) 80%, transparent);
-			backdrop-filter: blur(12px);
-			-webkit-backdrop-filter: blur(12px);
-		}
-		.nav { display: flex; gap: 4px; flex-wrap: wrap; }
-		.nav a {
-			color: var(--text-soft);
-			font-size: 0.85rem;
-			font-weight: 500;
-			padding: 7px 13px;
-			border-radius: 999px;
-			transition: background 0.2s ease, color 0.2s ease;
-		}
-		.nav a:hover { background: var(--bg-soft); opacity: 1; color: var(--text); }
-		.nav a.active { background: var(--accent-soft); color: var(--accent); }
+      /* ---------- Top bar (nav + theme) ---------- */
+      .topbar {
+        position: sticky;
+        top: 0;
+        z-index: 50;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+        padding: 16px 0;
+        margin-bottom: 8px;
+        background: color-mix(in srgb, var(--bg) 80%, transparent);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+      }
+      .nav {
+        display: flex;
+        gap: 4px;
+        flex-wrap: wrap;
+      }
+      .nav a {
+        color: var(--text-soft);
+        font-size: 0.85rem;
+        font-weight: 500;
+        padding: 7px 13px;
+        border-radius: 999px;
+        transition:
+          background 0.2s ease,
+          color 0.2s ease;
+      }
+      .nav a:hover {
+        background: var(--bg-soft);
+        opacity: 1;
+        color: var(--text);
+      }
+      .nav a.active {
+        background: var(--accent-soft);
+        color: var(--accent);
+      }
 
-		.theme-toggle {
-			width: 42px; height: 42px;
-			border-radius: 11px;
-			border: 1px solid var(--border);
-			background: var(--surface);
-			color: var(--text-soft);
-			cursor: pointer;
-			display: grid; place-items: center;
-			flex-shrink: 0;
-			box-shadow: var(--shadow);
-			transition: transform 0.2s ease, color 0.2s ease;
-		}
-		.theme-toggle:hover { transform: translateY(-2px); color: var(--accent); }
-		.theme-toggle svg { width: 19px; height: 19px; }
-		.theme-toggle .sun { display: none; }
-		[data-theme="dark"] .theme-toggle .sun { display: block; }
-		[data-theme="dark"] .theme-toggle .moon { display: none; }
+      .theme-toggle {
+        width: 42px;
+        height: 42px;
+        border-radius: 11px;
+        border: 1px solid var(--border);
+        background: var(--surface);
+        color: var(--text-soft);
+        cursor: pointer;
+        display: grid;
+        place-items: center;
+        flex-shrink: 0;
+        box-shadow: var(--shadow);
+        transition:
+          transform 0.2s ease,
+          color 0.2s ease;
+      }
+      .theme-toggle:hover {
+        transform: translateY(-2px);
+        color: var(--accent);
+      }
+      .theme-toggle svg {
+        width: 19px;
+        height: 19px;
+      }
+      .theme-toggle .sun {
+        display: none;
+      }
+      [data-theme="dark"] .theme-toggle .sun {
+        display: block;
+      }
+      [data-theme="dark"] .theme-toggle .moon {
+        display: none;
+      }
 
-		/* ---------- Main ---------- */
-		.main { padding: 8px 0 80px; min-width: 0; }
+      /* ---------- Main ---------- */
+      .main {
+        padding: 8px 0 80px;
+        min-width: 0;
+      }
 
-		.section { padding: 38px 0; scroll-margin-top: 90px; }
-		.section + .section { border-top: 1px solid var(--border); }
+      .section {
+        padding: 38px 0;
+        scroll-margin-top: 90px;
+      }
+      .section + .section {
+        border-top: 1px solid var(--border);
+      }
 
-		.section-head { display: flex; align-items: baseline; gap: 14px; margin-bottom: 26px; }
-		.section-head .num {
-			font-family: var(--serif);
-			font-size: 0.95rem;
-			color: var(--accent);
-			font-weight: 500;
-		}
-		.section-head h2 {
-			font-family: var(--serif);
-			font-size: 1.7rem;
-			font-weight: 500;
-			letter-spacing: -0.01em;
-		}
+      .section-head {
+        display: flex;
+        align-items: baseline;
+        gap: 14px;
+        margin-bottom: 26px;
+      }
+      .section-head .num {
+        font-family: var(--serif);
+        font-size: 0.95rem;
+        color: var(--accent);
+        font-weight: 500;
+      }
+      .section-head h2 {
+        font-family: var(--serif);
+        font-size: 1.7rem;
+        font-weight: 500;
+        letter-spacing: -0.01em;
+      }
 
-		.lead {
-			font-size: 1.18rem;
-			line-height: 1.7;
-			color: var(--text);
-			max-width: 62ch;
-		}
-		.lead .hl { color: var(--accent); font-weight: 500; }
-		.prose p { color: var(--text-soft); max-width: 64ch; }
-		.prose p + p { margin-top: 14px; }
+      .lead {
+        font-size: 1.18rem;
+        line-height: 1.7;
+        color: var(--text);
+        max-width: 62ch;
+      }
+      .lead .hl {
+        color: var(--accent);
+        font-weight: 500;
+      }
+      .prose p {
+        color: var(--text-soft);
+        max-width: 64ch;
+      }
+      .prose p + p {
+        margin-top: 14px;
+      }
 
-		.hello {
-			display: inline-block;
-			font-size: 0.82rem;
-			font-weight: 600;
-			letter-spacing: 0.14em;
-			text-transform: uppercase;
-			color: var(--accent);
-			margin-bottom: 16px;
-		}
+      .hello {
+        display: inline-block;
+        font-size: 0.82rem;
+        font-weight: 600;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        color: var(--accent);
+        margin-bottom: 16px;
+      }
 
-		/* tags */
-		.tags { display: flex; flex-wrap: wrap; gap: 10px; }
-		.tag {
-			font-size: 0.86rem;
-			padding: 8px 16px;
-			border-radius: 999px;
-			background: var(--surface);
-			border: 1px solid var(--border);
-			color: var(--text-soft);
-			box-shadow: var(--shadow);
-		}
-		.tag.solid { background: var(--accent-soft); color: var(--accent); border-color: transparent; }
+      /* tags */
+      .tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+      .tag {
+        font-size: 0.86rem;
+        padding: 8px 16px;
+        border-radius: 999px;
+        background: var(--surface);
+        border: 1px solid var(--border);
+        color: var(--text-soft);
+        box-shadow: var(--shadow);
+      }
+      .tag.solid {
+        background: var(--accent-soft);
+        color: var(--accent);
+        border-color: transparent;
+      }
 
-		/* timeline */
-		.timeline { position: relative; padding-left: 28px; }
-		.timeline::before {
-			content: ""; position: absolute; left: 5px; top: 6px; bottom: 6px;
-			width: 2px; background: var(--border);
-		}
-		.tl-item { position: relative; padding-bottom: 26px; }
-		.tl-item:last-child { padding-bottom: 0; }
-		.tl-item::before {
-			content: ""; position: absolute; left: -27px; top: 6px;
-			width: 12px; height: 12px; border-radius: 50%;
-			background: var(--bg); border: 2.5px solid var(--accent);
-		}
-		.tl-item .when { font-size: 0.8rem; color: var(--text-mute); font-weight: 500; letter-spacing: 0.02em; }
-		.tl-item .what { font-size: 1.05rem; font-weight: 600; margin: 3px 0 2px; }
-		.tl-item .where { color: var(--text-soft); font-size: 0.92rem; }
+      /* timeline */
+      .timeline {
+        position: relative;
+        padding-left: 28px;
+      }
+      .timeline::before {
+        content: "";
+        position: absolute;
+        left: 5px;
+        top: 6px;
+        bottom: 6px;
+        width: 2px;
+        background: var(--border);
+      }
+      .tl-item {
+        position: relative;
+        padding-bottom: 26px;
+      }
+      .tl-item:last-child {
+        padding-bottom: 0;
+      }
+      .tl-item::before {
+        content: "";
+        position: absolute;
+        left: -27px;
+        top: 6px;
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background: var(--bg);
+        border: 2.5px solid var(--accent);
+      }
+      .tl-item .when {
+        font-size: 0.8rem;
+        color: var(--text-mute);
+        font-weight: 500;
+        letter-spacing: 0.02em;
+      }
+      .tl-item .what {
+        font-size: 1.05rem;
+        font-weight: 600;
+        margin: 3px 0 2px;
+      }
+      .tl-item .where {
+        color: var(--text-soft);
+        font-size: 0.92rem;
+      }
 
-		/* publications */
-		.pub-list { display: flex; flex-direction: column; gap: 14px; }
-		.pub {
-			display: grid;
-			grid-template-columns: auto 1fr;
-			gap: 20px;
-			padding: 20px 22px;
-			background: var(--surface);
-			border: 1px solid var(--border);
-			border-radius: var(--radius);
-			box-shadow: var(--shadow);
-			transition: transform 0.22s ease, box-shadow 0.22s ease, border-color 0.22s ease;
-		}
-		.pub:hover { transform: translateY(-3px); box-shadow: var(--shadow-lg); border-color: var(--accent-ring); }
-		.pub .yr {
-			font-family: var(--serif);
-			font-size: 1.5rem;
-			color: var(--accent);
-			line-height: 1;
-			align-self: start;
-			padding-top: 2px;
-		}
-		.pub .body { min-width: 0; }
-		.pub .title { font-size: 1.04rem; font-weight: 600; line-height: 1.4; }
-		.pub .meta { margin-top: 8px; display: flex; flex-wrap: wrap; align-items: center; gap: 10px; }
-		.venue {
-			font-size: 0.78rem; font-weight: 600;
-			padding: 4px 11px; border-radius: 999px;
-			background: var(--accent-soft); color: var(--accent);
-		}
-		.venue.muted { background: var(--bg-soft); color: var(--text-mute); }
-		.pub .link { font-size: 0.84rem; font-weight: 500; display: inline-flex; align-items: center; gap: 5px; }
-		.pub .link svg { width: 13px; height: 13px; }
+      /* publications */
+      .pub-list {
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+      }
+      .pub {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        gap: 20px;
+        padding: 20px 22px;
+        background: var(--surface);
+        border: 1px solid var(--border);
+        border-radius: var(--radius);
+        box-shadow: var(--shadow);
+        transition:
+          transform 0.22s ease,
+          box-shadow 0.22s ease,
+          border-color 0.22s ease;
+      }
+      .pub:hover {
+        transform: translateY(-3px);
+        box-shadow: var(--shadow-lg);
+        border-color: var(--accent-ring);
+      }
+      .pub .yr {
+        font-family: var(--serif);
+        font-size: 1.5rem;
+        color: var(--accent);
+        line-height: 1;
+        align-self: start;
+        padding-top: 2px;
+      }
+      .pub .body {
+        min-width: 0;
+      }
+      .pub .title {
+        font-size: 1.04rem;
+        font-weight: 600;
+        line-height: 1.4;
+      }
+      .pub .meta {
+        margin-top: 8px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 10px;
+      }
+      .venue {
+        font-size: 0.78rem;
+        font-weight: 600;
+        padding: 4px 11px;
+        border-radius: 999px;
+        background: var(--accent-soft);
+        color: var(--accent);
+      }
+      .venue.muted {
+        background: var(--bg-soft);
+        color: var(--text-mute);
+      }
+      .pub .link {
+        font-size: 0.84rem;
+        font-weight: 500;
+        display: inline-flex;
+        align-items: center;
+        gap: 5px;
+      }
+      .pub .link svg {
+        width: 13px;
+        height: 13px;
+      }
 
-		/* cards grid */
-		.cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 16px; }
-		.card {
-			padding: 22px;
-			background: var(--surface);
-			border: 1px solid var(--border);
-			border-radius: var(--radius);
-			box-shadow: var(--shadow);
-			transition: transform 0.22s ease, box-shadow 0.22s ease;
-		}
-		.card:hover { transform: translateY(-3px); box-shadow: var(--shadow-lg); }
-		.card h4 { font-size: 1.02rem; font-weight: 600; margin-bottom: 8px; line-height: 1.35; }
-		.card p { font-size: 0.92rem; color: var(--text-soft); }
+      /* cards grid */
+      .cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+        gap: 16px;
+      }
+      .card {
+        padding: 22px;
+        background: var(--surface);
+        border: 1px solid var(--border);
+        border-radius: var(--radius);
+        box-shadow: var(--shadow);
+        transition:
+          transform 0.22s ease,
+          box-shadow 0.22s ease;
+      }
+      .card:hover {
+        transform: translateY(-3px);
+        box-shadow: var(--shadow-lg);
+      }
+      .card h4 {
+        font-size: 1.02rem;
+        font-weight: 600;
+        margin-bottom: 8px;
+        line-height: 1.35;
+      }
+      .card p {
+        font-size: 0.92rem;
+        color: var(--text-soft);
+      }
 
-		/* two column lists */
-		.split { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; }
-		.skill-group { margin-bottom: 22px; }
-		.skill-group:last-child { margin-bottom: 0; }
-		.skill-group .label {
-			font-size: 0.78rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase;
-			color: var(--text-mute); margin-bottom: 12px;
-		}
-		.lang-list { list-style: none; display: flex; flex-direction: column; gap: 12px; }
-		.lang-list li { display: flex; justify-content: space-between; align-items: center; padding-bottom: 10px; border-bottom: 1px solid var(--border); }
-		.lang-list li:last-child { border-bottom: none; }
-		.lang-list .lvl { font-size: 0.82rem; color: var(--text-mute); }
+      /* two column lists */
+      .split {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+      }
+      .skill-group {
+        margin-bottom: 22px;
+      }
+      .skill-group:last-child {
+        margin-bottom: 0;
+      }
+      .skill-group .label {
+        font-size: 0.78rem;
+        font-weight: 600;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: var(--text-mute);
+        margin-bottom: 12px;
+      }
+      .lang-list {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+      }
+      .lang-list li {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 10px;
+        border-bottom: 1px solid var(--border);
+      }
+      .lang-list li:last-child {
+        border-bottom: none;
+      }
+      .lang-list .lvl {
+        font-size: 0.82rem;
+        color: var(--text-mute);
+      }
 
-		.teach-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 12px; }
-		.teach {
-			padding: 14px 16px;
-			background: var(--surface);
-			border: 1px solid var(--border);
-			border-radius: 12px;
-			transition: border-color 0.2s ease, transform 0.2s ease;
-		}
-		.teach:hover { border-color: var(--accent-ring); transform: translateY(-2px); }
-		.teach .c { font-size: 0.95rem; font-weight: 600; }
-		.teach .s { font-size: 0.8rem; color: var(--text-mute); margin-top: 2px; }
+      .teach-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+        gap: 12px;
+      }
+      .teach {
+        padding: 14px 16px;
+        background: var(--surface);
+        border: 1px solid var(--border);
+        border-radius: 12px;
+        transition:
+          border-color 0.2s ease,
+          transform 0.2s ease;
+      }
+      .teach:hover {
+        border-color: var(--accent-ring);
+        transform: translateY(-2px);
+      }
+      .teach .c {
+        font-size: 0.95rem;
+        font-weight: 600;
+      }
+      .teach .s {
+        font-size: 0.8rem;
+        color: var(--text-mute);
+        margin-top: 2px;
+      }
 
-		.award {
-			display: flex; gap: 18px; align-items: flex-start;
-			padding: 22px;
-			background: linear-gradient(135deg, var(--accent-soft), transparent);
-			border: 1px solid var(--accent-ring);
-			border-radius: var(--radius);
-		}
-		.award .badge {
-			width: 46px; height: 46px; flex-shrink: 0;
-			display: grid; place-items: center;
-			border-radius: 12px; background: var(--accent); color: #fff;
-		}
-		.award .badge svg { width: 24px; height: 24px; }
-		.award h4 { font-size: 1.05rem; font-weight: 600; }
-		.award p { color: var(--text-soft); font-size: 0.94rem; margin-top: 4px; }
+      .award {
+        display: flex;
+        gap: 18px;
+        align-items: flex-start;
+        padding: 22px;
+        background: linear-gradient(135deg, var(--accent-soft), transparent);
+        border: 1px solid var(--accent-ring);
+        border-radius: var(--radius);
+      }
+      .award .badge {
+        width: 46px;
+        height: 46px;
+        flex-shrink: 0;
+        display: grid;
+        place-items: center;
+        border-radius: 12px;
+        background: var(--accent);
+        color: #fff;
+      }
+      .award .badge svg {
+        width: 24px;
+        height: 24px;
+      }
+      .award h4 {
+        font-size: 1.05rem;
+        font-weight: 600;
+      }
+      .award p {
+        color: var(--text-soft);
+        font-size: 0.94rem;
+        margin-top: 4px;
+      }
 
-		.footer {
-			border-top: 1px solid var(--border);
-			padding: 30px 0 10px;
-			color: var(--text-mute);
-			font-size: 0.85rem;
-			display: flex; justify-content: space-between; flex-wrap: wrap; gap: 10px;
-		}
+      .footer {
+        border-top: 1px solid var(--border);
+        padding: 30px 0 10px;
+        color: var(--text-mute);
+        font-size: 0.85rem;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
 
-		/* reveal animation */
-		.reveal { opacity: 0; transform: translateY(20px); transition: opacity 0.6s ease, transform 0.6s ease; }
-		.reveal.in { opacity: 1; transform: none; }
+      /* reveal animation */
+      .reveal {
+        opacity: 0;
+        transform: translateY(20px);
+        transition:
+          opacity 0.6s ease,
+          transform 0.6s ease;
+      }
+      .reveal.in {
+        opacity: 1;
+        transform: none;
+      }
 
-		/* mobile sidebar header */
-		.mobile-hero { display: none; }
+      /* mobile sidebar header */
+      .mobile-hero {
+        display: none;
+      }
 
-		/* ---------- Responsive ---------- */
-		@media (max-width: 920px) {
-			.layout { grid-template-columns: 1fr; gap: 0; }
-			.sidebar {
-				position: static; height: auto;
-				flex-direction: column; align-items: center; text-align: center;
-				padding: 56px 0 24px;
-				gap: 20px;
-			}
-			.identity { display: flex; flex-direction: column; align-items: center; }
-			.contact-list { align-items: flex-start; }
-			.topbar { top: 0; }
-			.split { grid-template-columns: 1fr; gap: 24px; }
-		}
+      /* ---------- Responsive ---------- */
+      @media (max-width: 920px) {
+        .layout {
+          grid-template-columns: 1fr;
+          gap: 0;
+        }
+        .sidebar {
+          position: static;
+          height: auto;
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+          padding: 56px 0 24px;
+          gap: 20px;
+        }
+        .identity {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+        .contact-list {
+          align-items: flex-start;
+        }
+        .topbar {
+          top: 0;
+        }
+        .split {
+          grid-template-columns: 1fr;
+          gap: 24px;
+        }
+      }
 
-		@media (max-width: 560px) {
-			.pub { grid-template-columns: 1fr; gap: 10px; }
-			.pub .yr { font-size: 1.2rem; }
-			.section-head h2 { font-size: 1.4rem; }
-			.nav { display: none; }
-		}
+      @media (max-width: 560px) {
+        .pub {
+          grid-template-columns: 1fr;
+          gap: 10px;
+        }
+        .pub .yr {
+          font-size: 1.2rem;
+        }
+        .section-head h2 {
+          font-size: 1.4rem;
+        }
+        .nav {
+          display: none;
+        }
+      }
 
-		@media (prefers-reduced-motion: reduce) {
-			* { scroll-behavior: auto !important; }
-			.reveal { opacity: 1 !important; transform: none !important; transition: none; }
-		}
-	</style>
-</head>
+      @media (prefers-reduced-motion: reduce) {
+        * {
+          scroll-behavior: auto !important;
+        }
+        .reveal {
+          opacity: 1 !important;
+          transform: none !important;
+          transition: none;
+        }
+      }
+    </style>
+  </head>
 
-<body>
-	<div class="layout">
-		<!-- ============ SIDEBAR ============ -->
-		<aside class="sidebar">
-			<div class="avatar-wrap">
-				<img class="avatar" src="assets/images/resume-profile.jpg" alt="Mohammadali Mohammadkhani">
-				<span class="avatar-ring"></span>
-			</div>
+  <body>
+    <div class="layout">
+      <!-- ============ SIDEBAR ============ -->
+      <aside class="sidebar">
+        <div class="avatar-wrap">
+          <img
+            class="avatar"
+            src="assets/images/resume-profile.jpg"
+            alt="Mohammadali Mohammadkhani"
+          />
+          <span class="avatar-ring"></span>
+        </div>
 
-			<div class="identity">
-				<h1 class="name">Mohammadali<br>Mohammadkhani</h1>
-				<p class="role">MSc student in Computer Science<br>Data Science &amp; Artificial Intelligence</p>
-				<p class="affil">Saarland University · Saarbrücken</p>
-			</div>
+        <div class="identity">
+          <h1 class="name">Mohammadali<br />Mohammadkhani</h1>
+          <p class="role">
+            MSc student in Computer Science<br />Data Science &amp; Artificial
+            Intelligence
+          </p>
+          <p class="affil">Saarland University · Saarbrücken</p>
+        </div>
 
-			<ul class="contact-list">
-				<li>
-					<span class="ico" aria-hidden="true">
-						<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="15" height="15"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 5L2 7"/></svg>
-					</span>
-					<a href="mailto:moali.mohammadkhani@gmail.com">moali.mohammadkhani@gmail.com</a>
-				</li>
-				<li>
-					<span class="ico" aria-hidden="true">
-						<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="15" height="15"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z"/></svg>
-					</span>
-					<a href="tel:+989014518171">+98 901 451 81 71</a>
-				</li>
-				<li>
-					<span class="ico" aria-hidden="true">
-						<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="15" height="15"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0Z"/><circle cx="12" cy="10" r="3"/></svg>
-					</span>
-					<span>Saarbrücken, Germany</span>
-				</li>
-			</ul>
+        <ul class="contact-list">
+          <li>
+            <span class="ico" aria-hidden="true">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                width="15"
+                height="15"
+              >
+                <rect x="2" y="4" width="20" height="16" rx="2" />
+                <path d="m22 7-10 5L2 7" />
+              </svg>
+            </span>
+            <a href="mailto:moali.mohammadkhani@gmail.com"
+              >moali.mohammadkhani@gmail.com</a
+            >
+          </li>
+          <li>
+            <span class="ico" aria-hidden="true">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                width="15"
+                height="15"
+              >
+                <path
+                  d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z"
+                />
+              </svg>
+            </span>
+            <a href="tel:+989014518171">+98 901 451 81 71</a>
+          </li>
+          <li>
+            <span class="ico" aria-hidden="true">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                width="15"
+                height="15"
+              >
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0Z" />
+                <circle cx="12" cy="10" r="3" />
+              </svg>
+            </span>
+            <span>Saarbrücken, Germany</span>
+          </li>
+        </ul>
 
-			<div class="socials">
-				<a href="https://scholar.google.com/citations?user=XO8Yw9oAAAAJ&hl=en" target="_blank" rel="noopener" aria-label="Google Scholar" title="Google Scholar">
-					<svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 24a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm0-24L0 9.5l4.838 3.94A8 8 0 0 1 12 9a8 8 0 0 1 7.162 4.44L24 9.5z"/></svg>
-				</a>
-				<a href="https://github.com/MoaliMkh" target="_blank" rel="noopener" aria-label="GitHub" title="GitHub">
-					<svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.37.5 0 5.78 0 12.29c0 5.21 3.44 9.63 8.2 11.19.6.11.82-.25.82-.56v-2c-3.34.71-4.04-1.58-4.04-1.58-.55-1.36-1.34-1.73-1.34-1.73-1.08-.73.09-.72.09-.72 1.2.08 1.83 1.21 1.83 1.21 1.07 1.8 2.8 1.28 3.49.98.1-.76.42-1.28.76-1.57-2.67-.3-5.47-1.31-5.47-5.83 0-1.29.47-2.34 1.24-3.17-.13-.3-.54-1.52.12-3.16 0 0 1.01-.32 3.3 1.21a11.6 11.6 0 0 1 6.01 0c2.29-1.53 3.3-1.21 3.3-1.21.66 1.64.25 2.86.12 3.16.77.83 1.23 1.88 1.23 3.17 0 4.53-2.81 5.53-5.49 5.82.43.36.81 1.08.81 2.18v3.23c0 .31.22.68.83.56C20.57 21.91 24 17.5 24 12.29 24 5.78 18.63.5 12 .5z"/></svg>
-				</a>
-				<a href="https://linkedin.com/in/mohammadali-mohammadkhani-68bb951a4/" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn">
-					<svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.22.79 24 1.77 24h20.45c.98 0 1.78-.78 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>
-				</a>
-			</div>
-		</aside>
+        <div class="socials">
+          <a
+            href="https://scholar.google.com/citations?user=XO8Yw9oAAAAJ&hl=en"
+            target="_blank"
+            rel="noopener"
+            aria-label="Google Scholar"
+            title="Google Scholar"
+          >
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M12 24a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm0-24L0 9.5l4.838 3.94A8 8 0 0 1 12 9a8 8 0 0 1 7.162 4.44L24 9.5z"
+              />
+            </svg>
+          </a>
+          <a
+            href="https://github.com/MoaliMkh"
+            target="_blank"
+            rel="noopener"
+            aria-label="GitHub"
+            title="GitHub"
+          >
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M12 .5C5.37.5 0 5.78 0 12.29c0 5.21 3.44 9.63 8.2 11.19.6.11.82-.25.82-.56v-2c-3.34.71-4.04-1.58-4.04-1.58-.55-1.36-1.34-1.73-1.34-1.73-1.08-.73.09-.72.09-.72 1.2.08 1.83 1.21 1.83 1.21 1.07 1.8 2.8 1.28 3.49.98.1-.76.42-1.28.76-1.57-2.67-.3-5.47-1.31-5.47-5.83 0-1.29.47-2.34 1.24-3.17-.13-.3-.54-1.52.12-3.16 0 0 1.01-.32 3.3 1.21a11.6 11.6 0 0 1 6.01 0c2.29-1.53 3.3-1.21 3.3-1.21.66 1.64.25 2.86.12 3.16.77.83 1.23 1.88 1.23 3.17 0 4.53-2.81 5.53-5.49 5.82.43.36.81 1.08.81 2.18v3.23c0 .31.22.68.83.56C20.57 21.91 24 17.5 24 12.29 24 5.78 18.63.5 12 .5z"
+              />
+            </svg>
+          </a>
+          <a
+            href="https://linkedin.com/in/mohammadali-mohammadkhani-68bb951a4/"
+            target="_blank"
+            rel="noopener"
+            aria-label="LinkedIn"
+            title="LinkedIn"
+          >
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.22.79 24 1.77 24h20.45c.98 0 1.78-.78 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"
+              />
+            </svg>
+          </a>
+        </div>
+      </aside>
 
-		<!-- ============ MAIN ============ -->
-		<div class="main">
-			<header class="topbar">
-				<nav class="nav" id="nav">
-					<a href="#about">About</a>
-					<a href="#research">Research</a>
-					<a href="#publications">Publications</a>
-					<a href="#experience">Experience</a>
-					<a href="#education">Education</a>
-					<a href="#skills">Skills</a>
-				</nav>
-				<button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode" title="Toggle theme">
-					<svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79Z"/></svg>
-					<svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
-				</button>
-			</header>
+      <!-- ============ MAIN ============ -->
+      <div class="main">
+        <header class="topbar">
+          <nav class="nav" id="nav">
+            <a href="#about">About</a>
+            <a href="#research">Research</a>
+            <a href="#publications">Publications</a>
+            <a href="#experience">Experience</a>
+            <a href="#education">Education</a>
+            <a href="#skills">Skills</a>
+          </nav>
+          <button
+            class="theme-toggle"
+            id="themeToggle"
+            aria-label="Toggle dark mode"
+            title="Toggle theme"
+          >
+            <svg
+              class="moon"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79Z" />
+            </svg>
+            <svg
+              class="sun"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <circle cx="12" cy="12" r="4" />
+              <path
+                d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"
+              />
+            </svg>
+          </button>
+        </header>
 
-			<!-- About -->
-			<section class="section" id="about">
-				<span class="hello reveal">Hello, I'm Mohammadali</span>
-				<p class="lead reveal">
-					I graduated from <span class="hl">Sharif University of Technology</span> in Computer Engineering in 2024, and I'm now pursuing my MSc in Computer Science at <span class="hl">Saarland University</span>. My work lives at the intersection of <span class="hl">Natural Language Processing</span>, <span class="hl">Machine Learning</span>, and <span class="hl">Human-Centered Computing</span>.
-				</p>
-				<div class="prose reveal" style="margin-top:20px">
-					<p>I'm drawn to research that connects powerful language models with real human needs — from multimodal retrieval and accessibility to understanding how people experience technology. Alongside research, I spent three years as a software engineer building products at scale.</p>
-				</div>
-			</section>
+        <!-- About -->
+        <section class="section" id="about">
+          <span class="hello reveal">Hello, I'm Mohammadali</span>
+          <p class="lead reveal">
+            I graduated from
+            <span class="hl">Sharif University of Technology</span> in Computer
+            Engineering in 2024, and I'm now pursuing my MSc in Computer Science
+            (DSAI) at <span class="hl">Saarland University</span>. My current
+            focus is <span class="hl">LLM theory</span> and
+            <span class="hl">AI safety</span>, building on a background in
+            <span class="hl">Natural Language Processing</span>,
+            <span class="hl">Machine Learning</span>, and
+            <span class="hl">Human-Centered Computing</span>.
+          </p>
+          <div class="prose reveal" style="margin-top: 20px">
+            <p>
+              Much of my published work sits in human-centered computing and
+              NLP, from multimodal retrieval and accessibility to how people
+              experience conversational systems. More recently, I've been moving
+              toward understanding the foundations of large language models and
+              how to make them safer and more reliable. Alongside research, I
+              spent three years as a software engineer building products at
+              scale.
+            </p>
+          </div>
+        </section>
 
-			<!-- Research Interests -->
-			<section class="section" id="research">
-				<div class="section-head reveal"><span class="num">01</span><h2>Research Interests</h2></div>
-				<div class="tags reveal">
-					<span class="tag solid">Natural Language Processing</span>
-					<span class="tag solid">Machine Learning</span>
-					<span class="tag solid">Human-Centered Computing</span>
-				</div>
+        <!-- Research Interests -->
+        <section class="section" id="research">
+          <div class="section-head reveal">
+            <span class="num">01</span>
+            <h2>Research Interests</h2>
+          </div>
+          <div class="tags reveal">
+            <span class="tag solid">LLM Theory</span>
+            <span class="tag solid">AI Safety</span>
+            <span class="tag solid">Natural Language Processing</span>
+            <span class="tag solid">Machine Learning</span>
+            <span class="tag solid">Human-Centered Computing</span>
+          </div>
 
-				<h3 style="font-family:var(--serif);font-weight:500;font-size:1.2rem;margin:34px 0 18px" class="reveal">Selected Research Projects</h3>
-				<div class="cards">
-					<div class="card reveal">
-						<h4>Accessibility in Low-Code Applications via AI</h4>
-						<p>Analyzing low-code application reviews to detect accessibility-related issues. Curated a novel review dataset with manual labeling and applied a Transformer-based classifier to separate accessibility concerns.</p>
-					</div>
-					<div class="card reveal">
-						<h4>Personality Detection on Twitter (B.Sc. Project)</h4>
-						<p>Detecting personality on X/Twitter using two Transformer modules for sentiment analysis over text and images, paired with a questionnaire-based pipeline to compare online signals against real-world personality.</p>
-					</div>
-					<div class="card reveal">
-						<h4>Educational Helper for Teaching Assistants</h4>
-						<p>A supplementary platform that helps TAs generate, store, and manage ideas and questions — enhanced with tailored, customized suggestions.</p>
-					</div>
-				</div>
-			</section>
+          <h3
+            style="
+              font-family: var(--serif);
+              font-weight: 500;
+              font-size: 1.2rem;
+              margin: 34px 0 18px;
+            "
+            class="reveal"
+          >
+            Selected Research Projects
+          </h3>
+          <div class="cards">
+            <div class="card reveal">
+              <h4>Personality Detection on Twitter (B.Sc. Project)</h4>
+              <p>
+                Detecting personality on X/Twitter using two Transformer modules
+                for sentiment analysis over text and images, paired with a
+                questionnaire-based pipeline to compare online signals against
+                real-world personality.
+              </p>
+            </div>
+            <div class="card reveal">
+              <h4>Crosslingual Fact-Checked Claim Retrieval</h4>
+              <p>
+                Retrieving relevant fact-checked claims for multilingual social
+                media posts. Proposed TriAligner, a dual-encoder pipeline that
+                aligns native and English representations using contrastive
+                learning, LLM-based augmentation, hard negative sampling, and
+                GPT-4o reranking to improve monolingual and crosslingual
+                fact-checking.
+              </p>
+            </div>
+            <div class="card reveal">
+              <h4>Multi-Agent Orchestration for Therapeutic Chatbots</h4>
+              <p>
+                An eight-day randomized controlled trial (N=66) comparing a
+                multi-agent, finite-state chatbot with shared long-term memory
+                against single-agent and unguided LLM baselines for
+                self-administered psychotherapy. Showed that architectural
+                orchestration — not prompt engineering alone — makes therapeutic
+                dialogue significantly more natural and human-like.
+              </p>
+            </div>
+            <div class="card reveal">
+              <h4>Accessibility in Low-Code Applications via AI</h4>
+              <p>
+                Analyzing low-code application reviews to detect
+                accessibility-related issues. Curated a novel review dataset
+                with manual labeling and applied a Transformer-based classifier
+                to separate accessibility concerns.
+              </p>
+            </div>
+          </div>
+        </section>
 
-			<!-- Publications -->
-			<section class="section" id="publications">
-				<div class="section-head reveal"><span class="num">02</span><h2>Publications</h2></div>
-				<div class="pub-list">
-					<article class="pub reveal">
-						<span class="yr">'26</span>
-						<div class="body">
-							<div class="title">Feeds Don't Tell the Whole Story: Measuring Online-Offline Emotion Alignment</div>
-							<div class="meta">
-								<span class="venue">CHI Extended Abstracts 2026</span>
-								<a class="link" href="https://dl.acm.org/doi/pdf/10.1145/3772363.3798347" target="_blank" rel="noopener">Read <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M7 7h10v10"/></svg></a>
-							</div>
-						</div>
-					</article>
-					<article class="pub reveal">
-						<span class="yr">'26</span>
-						<div class="body">
-							<div class="title">Structure Matters: Evaluating Multi-Agent Orchestration in Generative Therapeutic Chatbots</div>
-							<div class="meta">
-								<span class="venue">CUI 2026</span>
-								<a class="link" href="https://arxiv.org/pdf/2603.00774" target="_blank" rel="noopener">Read <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M7 7h10v10"/></svg></a>
-							</div>
-						</div>
-					</article>
-					<article class="pub reveal">
-						<span class="yr">'25</span>
-						<div class="body">
-							<div class="title">Ask in Any Modality: A Comprehensive Survey on Multimodal Retrieval-Augmented Generation</div>
-							<div class="meta">
-								<span class="venue">ACL Findings 2025</span>
-								<a class="link" href="https://aclanthology.org/2025.findings-acl.861/" target="_blank" rel="noopener">Read <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M7 7h10v10"/></svg></a>
-							</div>
-						</div>
-					</article>
-					<article class="pub reveal">
-						<span class="yr">'25</span>
-						<div class="body">
-							<div class="title">Toward Inclusive Low-Code Development: Detecting Accessibility Issues in User Reviews</div>
-							<div class="meta">
-								<span class="venue">EASE 2025</span>
-								<a class="link" href="https://dl.acm.org/doi/pdf/10.1145/3756681.3757030" target="_blank" rel="noopener">Read <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M7 7h10v10"/></svg></a>
-							</div>
-						</div>
-					</article>
-					<article class="pub reveal">
-						<span class="yr">'25</span>
-						<div class="body">
-							<div class="title">MultiMind at SemEval-2025 Task 7: Crosslingual Fact-Checked Claim Retrieval via Multi-Source Alignment</div>
-							<div class="meta">
-								<span class="venue">ACL SemEval Workshop 2025</span>
-								<a class="link" href="https://aclanthology.org/anthology-files/pdf/semeval/2025.semeval-1.303.pdf" target="_blank" rel="noopener">Read <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M7 7h10v10"/></svg></a>
-							</div>
-						</div>
-					</article>
-					<article class="pub reveal">
-						<span class="yr">···</span>
-						<div class="body">
-							<div class="title">Empowering Teaching Assistants: A Platform for Streamlined Assignment Creation and Collaboration</div>
-							<div class="meta">
-								<span class="venue muted">Submitted · IEEE Open Journal of the Computer Society</span>
-							</div>
-						</div>
-					</article>
-				</div>
-			</section>
+        <!-- Publications -->
+        <section class="section" id="publications">
+          <div class="section-head reveal">
+            <span class="num">02</span>
+            <h2>Publications</h2>
+          </div>
+          <div class="pub-list">
+            <article class="pub reveal">
+              <span class="yr">'26</span>
+              <div class="body">
+                <div class="title">
+                  Feeds Don't Tell the Whole Story: Measuring Online-Offline
+                  Emotion Alignment
+                </div>
+                <div class="meta">
+                  <span class="venue">CHI Extended Abstracts 2026</span>
+                  <a
+                    class="link"
+                    href="https://dl.acm.org/doi/pdf/10.1145/3772363.3798347"
+                    target="_blank"
+                    rel="noopener"
+                    >Read
+                    <svg
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <path d="M7 17 17 7M7 7h10v10" /></svg
+                  ></a>
+                </div>
+              </div>
+            </article>
+            <article class="pub reveal">
+              <span class="yr">'26</span>
+              <div class="body">
+                <div class="title">
+                  Structure Matters: Evaluating Multi-Agent Orchestration in
+                  Generative Therapeutic Chatbots
+                </div>
+                <div class="meta">
+                  <span class="venue">CUI 2026</span>
+                  <a
+                    class="link"
+                    href="https://arxiv.org/pdf/2603.00774"
+                    target="_blank"
+                    rel="noopener"
+                    >Read
+                    <svg
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <path d="M7 17 17 7M7 7h10v10" /></svg
+                  ></a>
+                </div>
+              </div>
+            </article>
+            <article class="pub reveal">
+              <span class="yr">'25</span>
+              <div class="body">
+                <div class="title">
+                  Ask in Any Modality: A Comprehensive Survey on Multimodal
+                  Retrieval-Augmented Generation
+                </div>
+                <div class="meta">
+                  <span class="venue">ACL Findings 2025</span>
+                  <a
+                    class="link"
+                    href="https://aclanthology.org/2025.findings-acl.861/"
+                    target="_blank"
+                    rel="noopener"
+                    >Read
+                    <svg
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <path d="M7 17 17 7M7 7h10v10" /></svg
+                  ></a>
+                </div>
+              </div>
+            </article>
+            <article class="pub reveal">
+              <span class="yr">'25</span>
+              <div class="body">
+                <div class="title">
+                  Toward Inclusive Low-Code Development: Detecting Accessibility
+                  Issues in User Reviews
+                </div>
+                <div class="meta">
+                  <span class="venue">EASE 2025</span>
+                  <a
+                    class="link"
+                    href="https://dl.acm.org/doi/pdf/10.1145/3756681.3757030"
+                    target="_blank"
+                    rel="noopener"
+                    >Read
+                    <svg
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <path d="M7 17 17 7M7 7h10v10" /></svg
+                  ></a>
+                </div>
+              </div>
+            </article>
+            <article class="pub reveal">
+              <span class="yr">'25</span>
+              <div class="body">
+                <div class="title">
+                  MultiMind at SemEval-2025 Task 7: Crosslingual Fact-Checked
+                  Claim Retrieval via Multi-Source Alignment
+                </div>
+                <div class="meta">
+                  <span class="venue">ACL SemEval Workshop 2025</span>
+                  <a
+                    class="link"
+                    href="https://aclanthology.org/anthology-files/pdf/semeval/2025.semeval-1.303.pdf"
+                    target="_blank"
+                    rel="noopener"
+                    >Read
+                    <svg
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <path d="M7 17 17 7M7 7h10v10" /></svg
+                  ></a>
+                </div>
+              </div>
+            </article>
+            <article class="pub reveal">
+              <span class="yr">···</span>
+              <div class="body">
+                <div class="title">
+                  Empowering Teaching Assistants: A Platform for Streamlined
+                  Assignment Creation and Collaboration
+                </div>
+                <div class="meta">
+                  <span class="venue muted"
+                    >Submitted · IEEE Open Journal of the Computer Society</span
+                  >
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
 
-			<!-- Experience -->
-			<section class="section" id="experience">
-				<div class="section-head reveal"><span class="num">03</span><h2>Experience</h2></div>
+        <!-- Experience -->
+        <section class="section" id="experience">
+          <div class="section-head reveal">
+            <span class="num">03</span>
+            <h2>Experience</h2>
+          </div>
 
-				<h3 style="font-family:var(--serif);font-weight:500;font-size:1.2rem;margin-bottom:18px" class="reveal">Industry</h3>
-				<div class="timeline reveal" style="margin-bottom:40px">
-					<div class="tl-item">
-						<div class="when">July 2022 — September 2025</div>
-						<div class="what">Software Engineer</div>
-						<div class="where">Digikala — the largest e-commerce company in Iran</div>
-					</div>
-				</div>
+          <h3
+            style="
+              font-family: var(--serif);
+              font-weight: 500;
+              font-size: 1.2rem;
+              margin-bottom: 18px;
+            "
+            class="reveal"
+          >
+            Industry
+          </h3>
+          <div class="timeline reveal" style="margin-bottom: 40px">
+            <div class="tl-item">
+              <div class="when">July 2022 — September 2025</div>
+              <div class="what">Software Engineer</div>
+              <div class="where">
+                Digikala — the largest e-commerce company in Iran
+              </div>
+            </div>
+          </div>
 
-				<h3 style="font-family:var(--serif);font-weight:500;font-size:1.2rem;margin-bottom:18px" class="reveal">Teaching Assistant</h3>
-				<div class="teach-grid reveal">
-					<div class="teach"><div class="c">Linear Algebra</div><div class="s">Spring 2022</div></div>
-					<div class="teach"><div class="c">Data Structures &amp; Algorithms</div><div class="s">Fall 2021 · Spring 2022</div></div>
-					<div class="teach"><div class="c">Software Engineering</div><div class="s">Fall 2023</div></div>
-					<div class="teach"><div class="c">Computer Structure &amp; Language</div><div class="s">3 semesters · Fall 2022</div></div>
-					<div class="teach"><div class="c">Computer Networks</div><div class="s">Spring 2023</div></div>
-					<div class="teach"><div class="c">Computer Architecture</div><div class="s">Fall 2022</div></div>
-					<div class="teach"><div class="c">Advanced Programming</div><div class="s">Spring 2021</div></div>
-				</div>
-			</section>
+          <h3
+            style="
+              font-family: var(--serif);
+              font-weight: 500;
+              font-size: 1.2rem;
+              margin-bottom: 18px;
+            "
+            class="reveal"
+          >
+            Teaching Assistant
+          </h3>
+          <div class="teach-grid reveal">
+            <div class="teach">
+              <div class="c">Linear Algebra</div>
+              <div class="s">Spring 2022</div>
+            </div>
+            <div class="teach">
+              <div class="c">Data Structures &amp; Algorithms</div>
+              <div class="s">Fall 2021 · Spring 2022</div>
+            </div>
+            <div class="teach">
+              <div class="c">Software Engineering</div>
+              <div class="s">Fall 2023</div>
+            </div>
+            <div class="teach">
+              <div class="c">Computer Structure &amp; Language</div>
+              <div class="s">3 semesters · Fall 2022</div>
+            </div>
+            <div class="teach">
+              <div class="c">Computer Networks</div>
+              <div class="s">Spring 2023</div>
+            </div>
+            <div class="teach">
+              <div class="c">Computer Architecture</div>
+              <div class="s">Fall 2022</div>
+            </div>
+            <div class="teach">
+              <div class="c">Advanced Programming</div>
+              <div class="s">Spring 2021</div>
+            </div>
+          </div>
+        </section>
 
-			<!-- Education -->
-			<section class="section" id="education">
-				<div class="section-head reveal"><span class="num">04</span><h2>Education</h2></div>
-				<div class="timeline reveal">
-					<div class="tl-item">
-						<div class="when">Oct 2025 — Present</div>
-						<div class="what">MSc in Computer Science</div>
-						<div class="where">Saarland University · Saarbrücken, Germany</div>
-					</div>
-					<div class="tl-item">
-						<div class="when">Sep 2019 — July 2024</div>
-						<div class="what">BSc in Computer Engineering</div>
-						<div class="where">Sharif University of Technology · Tehran, Iran</div>
-					</div>
-					<div class="tl-item">
-						<div class="when">Sep 2015 — Sep 2019</div>
-						<div class="what">Diploma in Mathematics</div>
-						<div class="where">Ehsan High School · Tehran, Iran</div>
-					</div>
-				</div>
+        <!-- Education -->
+        <section class="section" id="education">
+          <div class="section-head reveal">
+            <span class="num">04</span>
+            <h2>Education</h2>
+          </div>
+          <div class="timeline reveal">
+            <div class="tl-item">
+              <div class="when">Oct 2025 — Present</div>
+              <div class="what">MSc in Computer Science</div>
+              <div class="where">
+                Saarland University · Saarbrücken, Germany
+              </div>
+            </div>
+            <div class="tl-item">
+              <div class="when">Sep 2019 — July 2024</div>
+              <div class="what">BSc in Computer Engineering</div>
+              <div class="where">
+                Sharif University of Technology · Tehran, Iran
+              </div>
+            </div>
+            <div class="tl-item">
+              <div class="when">Sep 2015 — Sep 2019</div>
+              <div class="what">Diploma in Mathematics</div>
+              <div class="where">Ehsan High School · Tehran, Iran</div>
+            </div>
+          </div>
 
-				<h3 style="font-family:var(--serif);font-weight:500;font-size:1.2rem;margin:36px 0 18px" class="reveal">Awards</h3>
-				<div class="award reveal">
-					<span class="badge" aria-hidden="true">
-						<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></svg>
-					</span>
-					<div>
-						<h4>National University Entrance Exam (Konkour)</h4>
-						<p>Ranked 47<sup>th</sup> among more than 150,000 participants in the Mathematics branch, Iran, 2019.</p>
-					</div>
-				</div>
-			</section>
+          <h3
+            style="
+              font-family: var(--serif);
+              font-weight: 500;
+              font-size: 1.2rem;
+              margin: 36px 0 18px;
+            "
+            class="reveal"
+          >
+            Awards
+          </h3>
+          <div class="award reveal">
+            <span class="badge" aria-hidden="true">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <circle cx="12" cy="8" r="6" />
+                <path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11" />
+              </svg>
+            </span>
+            <div>
+              <h4>National University Entrance Exam (Konkour)</h4>
+              <p>
+                Ranked 47<sup>th</sup> among more than 150,000 participants in
+                the Mathematics branch, Iran, 2019.
+              </p>
+            </div>
+          </div>
+        </section>
 
-			<!-- Skills -->
-			<section class="section" id="skills">
-				<div class="section-head reveal"><span class="num">05</span><h2>Skills &amp; Languages</h2></div>
-				<div class="split">
-					<div class="reveal">
-						<div class="skill-group">
-							<div class="label">Programming Languages</div>
-							<div class="tags">
-								<span class="tag">Python</span>
-								<span class="tag">JavaScript</span>
-								<span class="tag">React / React Native</span>
-								<span class="tag">Java</span>
-								<span class="tag">C / C++</span>
-							</div>
-						</div>
-						<div class="skill-group">
-							<div class="label">ML Frameworks &amp; Libraries</div>
-							<div class="tags">
-								<span class="tag">PyTorch</span>
-								<span class="tag">TensorFlow</span>
-								<span class="tag">scikit-learn</span>
-								<span class="tag">NLTK</span>
-								<span class="tag">NumPy</span>
-								<span class="tag">Pandas</span>
-								<span class="tag">SciPy</span>
-							</div>
-						</div>
-						<div class="skill-group">
-							<div class="label">Tools</div>
-							<div class="tags">
-								<span class="tag">Git</span>
-								<span class="tag">Jira</span>
-								<span class="tag">LaTeX</span>
-								<span class="tag">Linux</span>
-							</div>
-						</div>
-					</div>
-					<div class="reveal">
-						<div class="skill-group">
-							<div class="label">Languages</div>
-							<ul class="lang-list">
-								<li><span>Farsi</span><span class="lvl">Native</span></li>
-								<li><span>English</span><span class="lvl">Fluent</span></li>
-								<li><span>German</span><span class="lvl">Basic</span></li>
-							</ul>
-						</div>
-						<div class="skill-group">
-							<div class="label">Beyond Work</div>
-							<div class="tags">
-								<span class="tag">Hiking</span>
-								<span class="tag">Swimming</span>
-								<span class="tag">Movies</span>
-								<span class="tag">Traveling</span>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
+        <!-- Skills -->
+        <section class="section" id="skills">
+          <div class="section-head reveal">
+            <span class="num">05</span>
+            <h2>Skills &amp; Languages</h2>
+          </div>
+          <div class="split">
+            <div class="reveal">
+              <div class="skill-group">
+                <div class="label">Programming Languages</div>
+                <div class="tags">
+                  <span class="tag">Python</span>
+                  <span class="tag">JavaScript</span>
+                  <span class="tag">React / React Native</span>
+                  <span class="tag">Java</span>
+                  <span class="tag">C / C++</span>
+                </div>
+              </div>
+              <div class="skill-group">
+                <div class="label">ML Frameworks &amp; Libraries</div>
+                <div class="tags">
+                  <span class="tag">PyTorch</span>
+                  <span class="tag">TensorFlow</span>
+                  <span class="tag">scikit-learn</span>
+                  <span class="tag">NLTK</span>
+                  <span class="tag">NumPy</span>
+                  <span class="tag">Pandas</span>
+                  <span class="tag">SciPy</span>
+                </div>
+              </div>
+              <div class="skill-group">
+                <div class="label">Tools</div>
+                <div class="tags">
+                  <span class="tag">Git</span>
+                  <span class="tag">Jira</span>
+                  <span class="tag">LaTeX</span>
+                  <span class="tag">Linux</span>
+                </div>
+              </div>
+            </div>
+            <div class="reveal">
+              <div class="skill-group">
+                <div class="label">Languages</div>
+                <ul class="lang-list">
+                  <li><span>Farsi</span><span class="lvl">Native</span></li>
+                  <li><span>English</span><span class="lvl">Fluent</span></li>
+                  <li><span>German</span><span class="lvl">Basic</span></li>
+                </ul>
+              </div>
+              <div class="skill-group">
+                <div class="label">Beyond Work</div>
+                <div class="tags">
+                  <span class="tag">Hiking</span>
+                  <span class="tag">Swimming</span>
+                  <span class="tag">Movies</span>
+                  <span class="tag">Traveling</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
 
-			<footer class="footer">
-				<span>© <span id="year"></span> Mohammadali Mohammadkhani</span>
-				<span>Saarbrücken, Germany · Built with care</span>
-			</footer>
-		</div>
-	</div>
+        <footer class="footer">
+          <span>© <span id="year"></span> Mohammadali Mohammadkhani</span>
+          <span>Saarbrücken, Germany</span>
+        </footer>
+      </div>
+    </div>
 
-	<script>
-		(function () {
-			// Theme
-			var root = document.documentElement;
-			var toggle = document.getElementById('themeToggle');
-			var saved = localStorage.getItem('theme');
-			var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
-			if (saved === 'dark' || (!saved && prefersDark)) root.setAttribute('data-theme', 'dark');
-			toggle.addEventListener('click', function () {
-				var dark = root.getAttribute('data-theme') === 'dark';
-				if (dark) { root.removeAttribute('data-theme'); localStorage.setItem('theme', 'light'); }
-				else { root.setAttribute('data-theme', 'dark'); localStorage.setItem('theme', 'dark'); }
-			});
+    <script>
+      (function () {
+        // Theme
+        var root = document.documentElement;
+        var toggle = document.getElementById("themeToggle");
+        var saved = localStorage.getItem("theme");
+        var prefersDark =
+          window.matchMedia &&
+          window.matchMedia("(prefers-color-scheme: dark)").matches;
+        if (saved === "dark" || (!saved && prefersDark))
+          root.setAttribute("data-theme", "dark");
+        toggle.addEventListener("click", function () {
+          var dark = root.getAttribute("data-theme") === "dark";
+          if (dark) {
+            root.removeAttribute("data-theme");
+            localStorage.setItem("theme", "light");
+          } else {
+            root.setAttribute("data-theme", "dark");
+            localStorage.setItem("theme", "dark");
+          }
+        });
 
-			// Year
-			document.getElementById('year').textContent = new Date().getFullYear();
+        // Year
+        document.getElementById("year").textContent = new Date().getFullYear();
 
-			// Reveal on scroll
-			var io = new IntersectionObserver(function (entries) {
-				entries.forEach(function (e) {
-					if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
-				});
-			}, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
-			document.querySelectorAll('.reveal').forEach(function (el, i) {
-				el.style.transitionDelay = (Math.min(i % 4, 3) * 60) + 'ms';
-				io.observe(el);
-			});
+        // Reveal on scroll
+        var io = new IntersectionObserver(
+          function (entries) {
+            entries.forEach(function (e) {
+              if (e.isIntersecting) {
+                e.target.classList.add("in");
+                io.unobserve(e.target);
+              }
+            });
+          },
+          { threshold: 0.12, rootMargin: "0px 0px -40px 0px" },
+        );
+        document.querySelectorAll(".reveal").forEach(function (el, i) {
+          el.style.transitionDelay = Math.min(i % 4, 3) * 60 + "ms";
+          io.observe(el);
+        });
 
-			// Active nav highlight
-			var navLinks = Array.prototype.slice.call(document.querySelectorAll('#nav a'));
-			var sections = navLinks.map(function (a) { return document.querySelector(a.getAttribute('href')); });
-			var spy = new IntersectionObserver(function (entries) {
-				entries.forEach(function (e) {
-					if (e.isIntersecting) {
-						var id = '#' + e.target.id;
-						navLinks.forEach(function (a) { a.classList.toggle('active', a.getAttribute('href') === id); });
-					}
-				});
-			}, { rootMargin: '-45% 0px -50% 0px' });
-			sections.forEach(function (s) { if (s) spy.observe(s); });
-		})();
-	</script>
-</body>
+        // Active nav highlight
+        var navLinks = Array.prototype.slice.call(
+          document.querySelectorAll("#nav a"),
+        );
+        var sections = navLinks.map(function (a) {
+          return document.querySelector(a.getAttribute("href"));
+        });
+        var spy = new IntersectionObserver(
+          function (entries) {
+            entries.forEach(function (e) {
+              if (e.isIntersecting) {
+                var id = "#" + e.target.id;
+                navLinks.forEach(function (a) {
+                  a.classList.toggle("active", a.getAttribute("href") === id);
+                });
+              }
+            });
+          },
+          { rootMargin: "-45% 0px -50% 0px" },
+        );
+        sections.forEach(function (s) {
+          if (s) spy.observe(s);
+        });
+      })();
+    </script>
+  </body>
 </html>
