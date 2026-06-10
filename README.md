@@ -1,47 +1,48 @@
-<a href="https://themes.3rdwavemedia.com/bootstrap-templates/resume/devresume-free-bootstrap-5-resume-cv-template-for-developers/" target="_blank"><img src="https://themes.3rdwavemedia.com/wp-content/uploads/2019/04/Bootstrap-Resume-CV-Template-DevResume-Promo-1.png" alt="DevResume - Bootstrap 5 Resume/CV Template for Developers" /></a>
+# Mohammadali Mohammadkhani — Personal Website
 
-## Theme Details & Demo
+Source for my personal academic website, hosted with **GitHub Pages** at
+[moalimkh.github.io](https://moalimkh.github.io).
 
-**Demo:** https://themes.3rdwavemedia.com/demo/bs5/devresume/
+## Overview
 
-DevResume is a **free Bootstrap 5 resume/CV template** I made for software developers. Built on **Bootstrap 5 and SASS**, it's quick and easy to change the template styling. This template is designed to help you **build your personal brand and attract better clients**!
+A single, self-contained `index.html` — no build step, no framework, no dependencies
+to install. It uses only:
 
-## Author & License
+- Inline CSS (with a light/dark theme) and inline SVG icons
+- [Google Fonts](https://fonts.google.com) (Inter + Fraunces), loaded from a CDN
+- A small amount of vanilla JavaScript for the theme toggle, scroll-reveal, and
+  active-section navigation
 
-This Bootstrap template is made by UX/UI designer [Xiaoying Riley](https://twitter.com/3rdwave_themes) for developers and is 100% FREE as long as you **keep the footer attribution link**. You do not have the rights to resell, sublicense or redistribute (even for free) the template on its own or as a separate attachment from any of your work.
+## Structure
 
+```
+.
+├── index.html                 # the entire site
+├── favicon.ico
+└── assets/
+    └── images/
+        └── resume-profile.jpg  # profile photo
+```
 
-If you'd like to **use the template without the attribution link**, you can [buy the **commercial license** via the theme website](https://themes.3rdwavemedia.com/bootstrap-templates/resume/devresume-free-bootstrap-5-resume-cv-template-for-developers/)
+## Editing
 
+All content lives directly in `index.html`. Update the relevant section
+(About, Research, Publications, Experience, Education, Skills) and save.
 
-#### Follow Xiaoying
+To preview locally, just open `index.html` in a browser, or serve the folder:
 
-[Twitter](https://twitter.com/3rdwave_themes)
+```bash
+python3 -m http.server 8000
+# then visit http://localhost:8000
+```
 
-[Facebook](https://www.facebook.com/3rdwavethemes/)
+## Deploying
 
-[Dribbble](https://dribbble.com/Xiaoying)
+GitHub Pages serves `index.html` from the repository root automatically. To publish
+changes, simply commit and push:
 
-[Medium](https://medium.com/@3rdwave_themes)
-
-[Linkedin](https://uk.linkedin.com/in/xiaoying)
-
-
-## Latest Version
-**Bootstrap 5 v3.0** - 2023-06-24
-
-[Changelog](https://themes.3rdwavemedia.com/bootstrap-templates/resume/devresume-free-bootstrap-5-resume-cv-template-for-developers/?target=changelog)
-
-
-## Features
-
--  Fully Responsive
--  HTML5 + CSS3
--  Built on Bootstrap 5
--  **SCSS** source files included
--  FontAwesome icons
--  Compatible with all modern browsers
-
-## Credits
-- [Bootstrap](http://getbootstrap.com/)
-- [FontAwesome](http://fortawesome.github.io/Font-Awesome/)
+```bash
+git add -A
+git commit -m "Update website"
+git push
+```
