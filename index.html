@@ -74,10 +74,10 @@
       .text-link { font-size: 13px; }
       .portrait img { width: 180px; height: 225px; object-fit: cover; object-position: 50% 49%; border-radius: 2px; }
       .portrait-note { color: var(--muted); font-size: 12px; margin-top: 12px; }
-      .interests { display: flex; flex-wrap: wrap; align-items: baseline; gap: 8px 20px; padding-bottom: 32px; border-bottom: 1px solid var(--line); }
+      .interests { padding-block: 24px; border-block: 1px solid var(--line); }
+      .interests h2 { font-size: 18px; margin-bottom: 12px; }
       .eyebrow { font-size: 13px; font-weight: 500; }
-      .interests .eyebrow { color: var(--muted); }
-      .interest-list { display: flex; flex-wrap: wrap; gap: 4px 18px; font-size: 13px; }
+      .interest-list { display: flex; flex-wrap: wrap; gap: 8px 36px; margin: 0; padding-left: 18px; font-size: 15px; }
       .section { padding-block: 38px; border-bottom: 1px solid var(--line); }
       .section-top { display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 12px; margin-bottom: 26px; }
       .research-row { display: grid; grid-template-columns: 170px minmax(0, 1fr); gap: 30px; margin-top: 28px; }
@@ -195,10 +195,10 @@
           <p class="portrait-note">Saarbrücken, Germany</p>
         </figure>
       </section>
-      <div class="interests" aria-label="Research interests">
-        <p class="eyebrow">Areas of interest</p>
-        <div class="interest-list"><span>Natural language processing</span><span>Machine learning</span><span>Human-centered computing</span></div>
-      </div>
+      <section class="interests" aria-labelledby="interests-title">
+        <h2 id="interests-title">Research interests</h2>
+        <ul class="interest-list"><li>Natural language processing</li><li>Machine learning</li><li>Human-centered computing</li></ul>
+      </section>
       <section class="section" id="research" aria-labelledby="research-title">
         <div class="section-top">
           <div class="section-title"><h2 id="research-title">Recent and ongoing research</h2></div>
@@ -256,11 +256,12 @@
               <p class="entry-date">Oct. 2025–present</p><h3>Saarland University</h3><p class="entry-role">M.Sc. in Computer Science</p><p class="entry-copy">GPA: 1.6 on the German scale (1.0 best).</p>
               <details>
                 <summary>Selected coursework at Saarland</summary>
+                <p>German grading scale: 1.0 is best.</p>
                 <ul>
-                  <li>Machine Learning</li>
-                  <li>Neural Networks: Theory and Implementation</li>
-                  <li>Elements of Machine Learning</li>
-                  <li>Human-Computer Interaction</li>
+                  <li>Machine Learning — 1.7</li>
+                  <li>Neural Networks: Theory and Implementation — 1.3</li>
+                  <li>Elements of Machine Learning — 2.0</li>
+                  <li>Human-Computer Interaction — 1.7</li>
                 </ul>
               </details>
               <p class="award"><strong>Zuse School ELIZA Scholarship · 2025</strong><br />Competitive, merit-based scholarship for master's studies in Artificial Intelligence.</p>
