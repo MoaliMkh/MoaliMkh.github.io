@@ -2,7 +2,7 @@
 
 Personal academic website at [moalimkh.github.io](https://moalimkh.github.io), hosted on GitHub Pages.
 
-The site is a single `index.html` with inline CSS and vanilla JavaScript. No build step or package installation is needed. Google Fonts supplies Instrument Serif and DM Sans, with local system font fallbacks.
+The site is a single `index.html` with inline CSS and vanilla JavaScript. No build step or package installation is needed. Typography uses system fonts; the site has no external font dependencies.
 
 The page introduces current research, lists publications, and summarizes education, engineering, teaching, and technical skills. It supports mobile layouts, light and dark themes, keyboard navigation, and reduced-motion preferences. Content remains readable without JavaScript.
 
